@@ -9,12 +9,16 @@ namespace MediaLibrary.Interfaces.Managers
 {
     public interface IFavouriteManager
     {
-        IEnumerable<Resource> GetFavouriteResources(Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetFavourites(Dictionary<string, object> opts = null);
 
-        IEnumerable<Resource> GetFavouriteResources(ResourceMediaType mediaType, Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetFavourites(ResourceMediaType mediaType, Dictionary<string, object> opts = null);
 
-        IEnumerable<Resource> GetFavouriteResources(int subcategoryId, Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetFavourites(int subcategoryId, Dictionary<string, object> opts = null);
 
-        IEnumerable<Resource> GetFavouriteResources(ResourceLocationType location, Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetFavourites(ResourceLocationType location, Dictionary<string, object> opts = null);
+
+        int AddFavourite(int recourseId);
+
+        bool DeleteFavourite(int recourseId);
     }
 }

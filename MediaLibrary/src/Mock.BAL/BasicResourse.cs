@@ -20,10 +20,16 @@ namespace Mock.BAL
         public ResourceMediaType MediaType { get; set; }
 
         public double BookmarkPosition { get; set; }
+
+        public double Length { get; set; }
         //public virtual ICollection<MediaCategory> Сategories { get; set; }
         public MediaSubCategory SubCategory { get; set; }
 
-        public string Location { get; set; }
+        public string Address { get; set; }
+
+        public Location Location { get; set; }
+
+        // to do: add calculated recourse info property 
 
 
         //public abstract string GetAdress();
@@ -36,5 +42,10 @@ namespace Mock.BAL
         Text,
         Audio,
         Video
+    }
+
+    public enum Location{
+        Local,
+        Web
     }
 }
