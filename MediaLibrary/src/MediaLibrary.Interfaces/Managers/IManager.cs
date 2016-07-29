@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace MediaLibrary.Interfaces.Managers
 {
-    public interface IManager
+    public interface IResourceManager
     {
-        Resource GetResource(int resourceId);
-        IEnumerable<Resource> GetResources(int[] resourcesId);
-        IEnumerable<Resource> GetResourses(ResourceMediaType mediaType);
-        IEnumerable<Resource> GetResourses(int subcategoryId);
-        IEnumerable<Resource> GetResourses(ResourceLocationType location);
+        Resource Get(int resourceId);
+        IEnumerable<Resource> GetMany(int[] resourcesId, Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetMany(ResourceMediaType mediaType, Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetMany(int subcategoryId, Dictionary<string, object> opts = null);
+        IEnumerable<Resource> GetMany(ResourceLocationType location, Dictionary<string, object> opts = null);
 
-        bool DeleteResource(int resourceId);
+        bool Delete(int resourceId);
 
-        int AddResource(Resource resource);
+        int Add(Resource resource);
 
-        int UpdateResource(Resource recource);
+        int Update(Resource recource);
     }
 }
