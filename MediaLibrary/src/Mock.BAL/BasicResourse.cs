@@ -23,7 +23,7 @@ namespace Mock.BAL
 
         public double Length { get; set; }
         //public virtual ICollection<MediaCategory> Сategories { get; set; }
-        public MediaSubCategory SubCategory { get; set; }
+        public List<MediaSubCategory> SubCategory { get; set; }
 
         public string Address { get; set; }
 
@@ -35,6 +35,11 @@ namespace Mock.BAL
         //public abstract string GetAdress();
 
         //public abstract void UpdateRating(double additionalMark);
+    }
+
+    public enum Languages
+    {
+
     }
 
     public enum ResourceMediaType
