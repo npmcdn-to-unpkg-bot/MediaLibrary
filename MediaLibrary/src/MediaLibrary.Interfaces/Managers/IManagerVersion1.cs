@@ -7,13 +7,7 @@ namespace MediaLibrary.Interfaces.Managers
 {
     interface IManagerFirstVesion
     {
-        /// <summary>
-        /// Get resource by id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        bool GetResourse(Int32 id);
-
+        //bool GetResourse(Int32 id);
         //IEnumerable<BasicResourse> GetResoursesByMediaType(MediaResourseType resourceMediaType);
         //IEnumerable<BasicResourse> GetResoursesByCategory(MediaCategoryType category);
         //IEnumerable<BasicResourse> GetFavoriteResourses();
@@ -33,5 +27,7 @@ namespace MediaLibrary.Interfaces.Managers
 
 
         //MediaCategoryType AddResourceCategory();
+
+
     }
 }

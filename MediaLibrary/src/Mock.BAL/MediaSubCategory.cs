@@ -10,5 +10,7 @@ namespace Mock.BAL
         public int Id { get; set; }
         public string Name { get; set; }
 
+        public MediaCategory Category { get; set; }
+
     }
 }

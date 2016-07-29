@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Mock.BAL
 {
-    public class MediaLocalResourse: BasicResourse
+    public class MediaLocalResourse: Resource
     {
         public MediaLocalResourse()
         {
